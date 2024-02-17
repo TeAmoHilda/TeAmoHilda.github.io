@@ -26,15 +26,11 @@
         }
 
         .content-container {
+            background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco semi-transparente */
             padding: 5vw;
             margin: 5vw; /* Espaciado para el marco blanco */
             display: inline-block; /* Hacer que el contenedor se ajuste al ancho del contenido */
             max-width: 90%;
-            border: 7px solid transparent; /* Borde transparente inicial */
-            border-image: 
-                linear-gradient(to bottom, red 50%, white 50%) 1 100%, /* Borde vertical rojo/blanco */
-                linear-gradient(to right, red 50%, white 50%) 100% 1; /* Borde horizontal rojo/blanco */
-            border-image-slice: 7; /* Grosor del borde */
         }
 
         h1 {
@@ -103,6 +99,16 @@
             .hearts {
                 font-size: 2.5vw;
             }
+
+            .buttons-container {
+                display: flex;
+                justify-content: center;
+                margin-top: 2vw;
+            }
+
+            #botonPedir, #botonRechazar {
+                flex: 1;
+            }
         }
     </style>
 </head>
@@ -111,8 +117,10 @@
     <div class="content-container">
         <h1><span class="hearts">❤️❤️</span>Mi querida Hilda...<span class="hearts">❤️❤️</span></h1>
         <p>¿Puedo ser tu novio? 🥺👉👈❤️</p>
-        <button id="botonPedir">Shi(Josue feliz :D)</button>
-        <button id="botonRechazar">No(Josue triste :,c)</button>
+        <div class="buttons-container">
+            <button id="botonPedir">Shi(Josue feliz :D)</button>
+            <button id="botonRechazar">No(Josue triste :,c)</button>
+        </div>
     </div>
     
     <script>
