@@ -99,6 +99,16 @@
             .hearts {
                 font-size: 2.5vw;
             }
+
+            .buttons-container {
+                display: flex;
+                justify-content: center;
+                margin-top: 2vw;
+            }
+
+            #botonPedir, #botonRechazar {
+                flex: 1;
+            }
         }
     </style>
 </head>
@@ -107,8 +117,10 @@
     <div class="content-container">
         <h1><span class="hearts">❤️❤️</span>Mi querida Hilda...<span class="hearts">❤️❤️</span></h1>
         <p>¿Puedo ser tu novio? 🥺👉👈❤️</p>
-        <button id="botonPedir">Shi(Josue feliz :D)</button>
-        <button id="botonRechazar">No(Josue triste :,c)</button>
+        <div class="buttons-container">
+            <button id="botonPedir">Shi(Josue feliz :D)</button>
+            <button id="botonRechazar">No(Josue triste :,c)</button>
+        </div>
     </div>
     
     <script>
