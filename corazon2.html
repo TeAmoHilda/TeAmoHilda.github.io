@@ -27,31 +27,32 @@
 
         .content-container {
             background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco semi-transparente */
-            padding: 20px;
-            margin: 20px; /* Espaciado para el marco blanco */
+            padding: 5vw;
+            margin: 5vw; /* Espaciado para el marco blanco */
             display: inline-block; /* Hacer que el contenedor se ajuste al ancho del contenido */
+            max-width: 90%;
         }
 
         h1 {
-            font-size: 3em;
+            font-size: 5vw;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         }
 
         p {
-            font-size: 1.5em;
-            margin-bottom: 20px;
+            font-size: 3vw;
+            margin-bottom: 5vw;
         }
 
         #botonPedir, #botonRechazar {
             background-color: #ff5a5f;
             color: white;
             border: none;
-            padding: 15px 30px;
-            font-size: 1.5em;
-            border-radius: 5px;
+            padding: 4vw 8vw;
+            font-size: 3vw;
+            border-radius: 1vw;
             cursor: pointer;
             transition: background-color 0.3s;
-            margin-right: 20px;
+            margin-right: 2vw;
         }
 
         #botonPedir:hover, #botonRechazar:hover {
@@ -59,7 +60,7 @@
         }
 
         .hearts {
-            font-size: 2em;
+            font-size: 4vw;
             color: red;
             animation: heartbeat 1s infinite alternate;
         }
@@ -70,6 +71,33 @@
             }
             to {
                 transform: scale(1.2);
+            }
+        }
+
+        @media (min-width: 768px) {
+            .content-container {
+                padding: 3vw;
+                margin: 0 auto;
+                max-width: 50%;
+            }
+
+            h1 {
+                font-size: 3vw;
+            }
+
+            p {
+                font-size: 2vw;
+            }
+
+            #botonPedir, #botonRechazar {
+                padding: 2vw 4vw;
+                font-size: 2vw;
+                border-radius: 0.5vw;
+                margin-right: 1vw;
+            }
+
+            .hearts {
+                font-size: 2.5vw;
             }
         }
     </style>
@@ -95,7 +123,4 @@
         });
     </script>
 </body>
-</html>
-
-
 </html>
