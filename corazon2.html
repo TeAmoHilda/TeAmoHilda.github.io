@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hilda TE AMO!!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .background-container {
+            background-image: url('a.jpeg'); /* Imagen de fondo */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: -1; /* Para enviar el contenedor detrás del resto del contenido */
+        }
+
+        .content-container {
+            background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco semi-transparente */
+            padding: 20px;
+            margin: 20px; /* Espaciado para el marco blanco */
+            display: inline-block; /* Hacer que el contenedor se ajuste al ancho del contenido */
+        }
+
+        h1 {
+            font-size: 3em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        p {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+        }
+
+        #botonPedir, #botonRechazar {
+            background-color: #ff5a5f;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.5em;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin-right: 20px;
+        }
+
+        #botonPedir:hover, #botonRechazar:hover {
+            background-color: #ff4146;
+        }
+
+        .hearts {
+            font-size: 2em;
+            color: red;
+            animation: heartbeat 1s infinite alternate;
+        }
+
+        @keyframes heartbeat {
+            from {
+                transform: scale(1);
+            }
+            to {
+                transform: scale(1.2);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="background-container"></div> <!-- Contenedor de la imagen de fondo -->
+    <div class="content-container">
+        <h1><span class="hearts">❤️❤️</span>Mi querida Hilda...<span class="hearts">❤️❤️</span></h1>
+        <p>¿Puedo ser tu novio? 🥺👉👈❤️</p>
+        <button id="botonPedir">Shi(Josue feliz :D)</button>
+        <button id="botonRechazar">No(Josue triste :,c)</button>
+    </div>
+    
+    <script>
+        document.getElementById('botonPedir').addEventListener('click', function() {
+            alert('¡TE AMO🥺!');
+            // Aquí podrías agregar más acciones, como redireccionar a otra página o mostrar un mensaje especial.
+        });
+
+        document.getElementById('botonRechazar').addEventListener('click', function() {
+            alert('Ok, fuera de mi casa :D!');
+            // Aquí podrías agregar más acciones, como mostrar un mensaje especial o redirigir a otra página.
+        });
+    </script>
+</body>
+</html>
+
+
+</html>
